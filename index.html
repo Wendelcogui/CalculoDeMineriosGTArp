@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estoque</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Controle de Itens</h1>
+
+        <div class="itens">
+            <div class="item">
+                <label for="ferro">
+                    <img src="imagens/ferro.webp" alt="">Ferro</label>
+                <input type="number" id="ferro" value="0" min="0">
+                <button onclick="adicionar('ferro')">Adicionar</button>
+                <button onclick="remover('ferro')">Remover</button>
+            </div>
+            <div class="item">
+                <label for="cobre">
+                    <img src="imagens/cobre.webp" alt="">Cobre</label>
+                <input type="number" id="cobre" value="0" min="0">
+                <button onclick="adicionar('cobre')">Adicionar</button>
+                <button onclick="remover('cobre')">Remover</button>
+            </div>
+            <div class="item">
+                <label for="prata">
+                    <img src="imagens/prata.png" alt="">Prata</label>
+                <input type="number" id="prata" value="0" min="0">
+                <button onclick="adicionar('prata')">Adicionar</button>
+                <button onclick="remover('prata')">Remover</button>
+            </div>
+            <div class="item">
+                <label for="ouro">
+                    <img src="imagens/ouro.webp" alt="">Ouro</label>
+                <input type="number" id="ouro" value="0" min="0">
+                <button onclick="adicionar('ouro')">Adicionar</button>
+                <button onclick="remover('ouro')">Remover</button>
+            </div>
+            <div class="item">
+                <label for="rubi">
+                    <img src="imagens/rubi.webp" alt="">Rubi</label>
+                <input type="number" id="rubi" value="0" min="0">
+                <button onclick="adicionar('rubi')">Adicionar</button>
+                <button onclick="remover('rubi')">Remover</button>
+            </div>
+            <div class="item">
+                <label for="diamante">
+                    <img src="imagens/diamante.webp" alt="">Diamante</label>
+                <input type="number" id="diamante" value="0" min="0">
+                <button onclick="adicionar('diamante')">Adicionar</button>
+                <button onclick="remover('diamante')">Remover</button>
+            </div>
+        </div>
+
+        <div class="resultado">
+            <h2>Exibição de Itens</h2>
+            <ul id="exibicao"></ul>
+            <p>Total: R$ <span id="total">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
